@@ -77,3 +77,93 @@ time.sleep(2)
 print("end of application")
 #In tuple we cannot change or modift values or objects thats why immutable.
 #But in list we can modify or change the values or objects thats why mutable.
+
+#Set data types is an mutable data type.
+#set does not accept duplicate objects.
+#set data type can not be update or modified becuse set doesnot support indexing and slicing methodology.
+#empty set will be by default dictionary data type.
+#set indicated by{}.
+#set predefined functions: add(),remove().
+#Examples:
+
+import time
+set1={}
+print("empty set by default as dictionary")
+print(type(set1))
+print()
+time.sleep(2)
+print("end of application")
+
+#
+import time
+s1={1,2,4,1,2,4}
+print("Set not allows duplicates objects")
+print(s1)
+print(type(s1))
+time.sleep(2)
+print("end of application")
+
+#
+
+import time
+s1={1,2,3,4}
+print(type(s1))
+s1.add(5)
+s1.add(6)
+s1.add(7)
+print(s1)
+s1.add("python")
+s1.add("chandra_kiran")
+s1.add("full_stack_developer")
+print(s1)
+print()
+s1.remove(1)
+s1.remove(2)
+s1.remove(3)
+s1.remove(4)
+s1.remove(5)
+s1.remove(6)
+s1.remove(7)
+print(s1)
+print()
+time.sleep(2)
+print('end of application')
+
+#Dictionary Data type:Dictioinary data can be representd in the form of key and vslue pair.
+#dictionary can be indicted by{}.
+#Dictionary data type is an mutable object data type.
+#Dictionary data type predefined functiions:
+#keys(),values(),items(),clear(),copy(),pop(),popitem(),sorted(),updtae(),get().
+#Exampels:
+
+import time
+d1={"name":"chandra kiran","age":25,"gender":"male"}
+print(d1)
+print(type(d1))
+print()
+time.sleep(2)
+print("end of appliacation")
+
+#Example:
+import time
+d1={"name":"chandra kiran","age":25,"gender":"male","cource":"full_stack_python","feez":30000}
+print(d1)
+print(type(d1))
+print()
+print(d1.keys())
+print(d1.values())
+print(d1.copy())
+print(d1.items())
+print(d1.popitem())
+print(d1.update({"hello":"world"}))
+print(d1)
+print(d1.pop("name"))
+print(d1.get("cource"))
+print(d1.clear())
+print(d1)
+print()
+time.sleep(2)
+print("end of applciation")
+
+#Byte and byte array data type:
+#

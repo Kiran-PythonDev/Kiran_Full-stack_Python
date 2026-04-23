@@ -166,4 +166,115 @@ time.sleep(2)
 print("end of applciation")
 
 #Byte and byte array data type:
+#Firstly byte data type. It is a immutale data type.
+#Byte data type is used to work o audio and video and semi strcture fules.
+#While working with byte data type range must be with in 255 bytes.
+#EXAMPLES:
+
+import time
+l1=[1,2,3,4,5,6,7]
+obj1=bytes(l1)
+print(obj1)
+print()
+print(type(obj1))
+print()
+time.sleep(2)
+print('end of application')
+
+##
+import time
+t1=(1,2,3,4,5,6)
+print(type(t1))
+print()
+obj1=bytes(t1)
+print(obj1)
+print(type(obj1))
+print()
+time.sleep(2)
+print("end of applicatipn")
+
 #
+
+import time
+l1=[123,23,34,45,56,254]
+print(type(l1))
+obj1=bytes(l1)
+print(*obj1)
+print(type(obj1))
+print()
+time.sleep(2)
+print("end of application")
+
+#Byte array data type is also exactly same as bytes data type.
+#byte array data type is mutable data type.
+#EXAMPLE:
+import time
+l1=[1,2,3,4,5,67,78]
+print(type(l1))
+obj1=bytearray(l1)
+print(obj1)
+print(type(obj1))
+print("Immutale Data type")
+obj1[0]=45
+obj1[1]=54
+obj1[2]=67
+obj1[3]=89
+print(obj1)
+print(type(obj1))
+print()
+time.sleep(2)
+print("end of application")
+##Frozen set data type:
+# set and frozen set data type are same but set data type is mutable and frozenset is immutale.
+#Example;
+
+import time
+s1={1,2,3,4,5,6,7,8}
+print(s1)
+print(type(s1))
+s2=frozenset(s1)
+print(s2)
+print(type(s2))
+print()
+time.sleep(2)
+print("End of application")
+
+#None data type:Which means nothing or empty.
+#example:
+import time
+emp_salary=21500
+print(emp_salary)
+print(type(emp_salary))
+Emp_salary=None
+print(Emp_salary)
+print(type(Emp_salary))
+print()
+time.sleep(2)
+print('end of application')
+##Range data type: Range datat type is to produce sequence of integers.
+# Range dta type is assosciated with for loop.
+#Examples:
+#Form1: range(end(end-1))
+import time
+for x1 in range(10):
+    print(x1)
+print()
+time.sleep(2)
+print("endof applcation")
+
+# Form2: range(end(end-1),stepsize)
+import time
+for a1 in range(10,20):
+    print(a1)
+    print()
+time.sleep(2)
+print("end of application")
+
+#form3: range(start,end(end-1),stepsize)
+
+import time
+for k1 in range(1,20,2):
+    print(k1)
+    print()
+time.sleep(2)
+print("end of application")
